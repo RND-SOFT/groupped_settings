@@ -8,7 +8,7 @@ Gem::Specification.new 'groupped_settings' do |spec|
   spec.authors       = ['Samoilenko Yuri']
   spec.email         = ['kinnalru@gmail.com']
   spec.description   = spec.summary = 'Groupped::Settings is a plugin that manage groupped settings for Rails :)'
-  spec.homepage      = 'https://github.com/RnD-Soft/GrouppedSettings'
+  spec.homepage      = 'https://github.com/RnD-Soft/groupped_settings'
   spec.license       = 'MIT'
 
   spec.files         = Dir['{lib}/**/*', 'README.md', 'LICENSE"'].reject do |f|
