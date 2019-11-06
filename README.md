@@ -2,7 +2,7 @@
 
 
 
-Groupped::Settings is a plugin that manage groupped settings :) Settings stored in own database table as json(b) field. Splitted by groups and can have polymorphyc referece to other models.
+Groupped::Settings is a plugin that manage groupped settings for Rails :) Settings stored in own database table as json(b) field. Splitted by groups and can have polymorphyc referece to other models.
 
 ## Setup
 
@@ -52,7 +52,7 @@ s.save!
 
 Include Settingsable concern:
 
-```
+```ruby
 class User
   include Groupped::Settings::Settingsable
 end

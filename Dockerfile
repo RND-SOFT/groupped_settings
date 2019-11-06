@@ -15,7 +15,7 @@ RUN set -ex \
   && apk add --no-cache build-base git curl
 
 ADD Gemfile Gemfile.lock *.gemspec /home/app/
-ADD lib/warden/cookie_session/version.rb /home/app/lib/warden/cookie_session/
+ADD lib/groupped/settings/version.rb /home/app/lib/groupped/settings/
 
 RUN set -ex \
   && curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter \

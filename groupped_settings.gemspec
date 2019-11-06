@@ -7,7 +7,7 @@ Gem::Specification.new 'groupped_settings' do |spec|
   spec.version       = ENV['BUILDVERSION'].to_i > 0 ? "#{Groupped::Settings::VERSION}.#{ENV['BUILDVERSION'].to_i}" : Groupped::Settings::VERSION
   spec.authors       = ['Samoilenko Yuri']
   spec.email         = ['kinnalru@gmail.com']
-  spec.description   = spec.summary = '!!!!'
+  spec.description   = spec.summary = 'Groupped::Settings is a plugin that manage groupped settings for Rails :)'
   spec.homepage      = 'https://github.com/RnD-Soft/GrouppedSettings'
   spec.license       = 'MIT'
 
