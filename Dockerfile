@@ -12,7 +12,7 @@ RUN mkdir -p /usr/local/etc \
   && echo 'gem: --no-document' > ~/.gemrc
 
 RUN set -ex \
-  && apk add --no-cache build-base git curl
+  && apk add --no-cache build-base git curl sqlite-dev
 
 ADD Gemfile Gemfile.lock *.gemspec /home/app/
 ADD lib/groupped/settings/version.rb /home/app/lib/groupped/settings/
