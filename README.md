@@ -5,7 +5,7 @@
 [![YARD](https://badgen.net/badge/YARD/doc/blue)](http://www.rubydoc.info/gems/groupped_settings)
 
 
-[![Coverage](https://lysander.x.rnds.pro/api/v1/badges/gs_quality.svg)](https://lysander.x.rnds.pro/api/v1/badges/gs_quality.html)
+[![Coverage](https://lysander.x.rnds.pro/api/v1/badges/gs_coverage.svg)](https://lysander.x.rnds.pro/api/v1/badges/gs_coverage.html)
 [![Quality](https://lysander.x.rnds.pro/api/v1/badges/gs_quality.svg)](https://lysander.x.rnds.pro/api/v1/badges/gs_quality.html)
 [![Outdated](https://lysander.x.rnds.pro/api/v1/badges/gs_outdated.svg)](https://lysander.x.rnds.pro/api/v1/badges/gs_outdated.html)
 [![Vulnerabilities](https://lysander.x.rnds.pro/api/v1/badges/gs_vulnerable.svg)](https://lysander.x.rnds.pro/api/v1/badges/gs_vulnerable.html)
