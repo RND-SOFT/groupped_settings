@@ -3,9 +3,7 @@
 require 'active_record'
 require 'protected_attributes' if ENV['PROTECTED_ATTRIBUTES'] == 'true'
 
-if I18n.respond_to?(:enforce_available_locales=)
-  I18n.enforce_available_locales = false
-end
+I18n.enforce_available_locales = false if I18n.respond_to?(:enforce_available_locales=)
 
 class User < ActiveRecord::Base
   # has_settings do |s|
@@ -26,8 +24,14 @@ def setup_db
   puts
 
   require File.expand_path("#{$root}/../lib/generators/groupped_settings/migration/templates/migration.rb", __FILE__)
-  RailsSettingsMigration.migrate(:up)
+  GrouppedSettingsMigration.migrate(:up)
 
+  ActiveRecord::Schema.define(:version => 1) do
+    create_table :users do |t|
+      t.string :type
+      t.string :name
+    end
+  end
 end
 
 def clear_db
@@ -36,3 +40,4 @@ def clear_db
 end
 
 setup_db
+

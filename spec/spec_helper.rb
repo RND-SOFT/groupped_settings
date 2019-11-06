@@ -32,9 +32,9 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 SimpleCov.start
 
 $root = File.join(File.dirname(__dir__), 'spec')
-Dir[File.join(__dir__, 'support', '**', '*.rb')].sort.each { |f| puts f; require f }
+Dir[File.join(__dir__, 'support', '**', '*.rb')].sort.each {|f| puts f; require f }
 
-require 'groupped_settings'
+require 'groupped'
 
 RSpec.configure do |config|
   # config.verbose_retry = true
@@ -42,13 +42,8 @@ RSpec.configure do |config|
   # config.default_retry_count = 2
 
   config.before(:suite) do
-
-    GrouppedSettings.configure do |config|
-      config.key_field = :id
-      config.value_field = :value
+    Groupped::Settings.configure do |config|
     end
-
-    require 'groupped_settings/setting'  
   end
 
   # rspec-expectations config goes here. You can use an alternate
@@ -120,3 +115,4 @@ RSpec.configure do |config|
   #   # as the one that triggered the failure.
   #   Kernel.srand config.seed
 end
+

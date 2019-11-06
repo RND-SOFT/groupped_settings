@@ -1,7 +1,8 @@
 require 'rails/generators'
 require 'rails/generators/migration'
 
-module RailsSettings
+module Groupped
+  module Settings
   class MigrationGenerator < Rails::Generators::Base
     include Rails::Generators::Migration
 
@@ -19,5 +20,6 @@ module RailsSettings
         "%.3d" % (current_migration_number(dirname) + 1)
       end
     end
+  end
   end
 end
