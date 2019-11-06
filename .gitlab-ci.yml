@@ -56,7 +56,7 @@ build:
   only:
     - master
 
-.pushgem:
+pushgem:
   image: rnds/ruby:2.5-test
   stage: deploy
   script:
@@ -75,7 +75,7 @@ badges:
   variables:
     BRANCH_LOCK: ci/${CI_PROJECT_NAME}/${CI_COMMIT_REF_SLUG}
     ENV_LOCK: ci/${CI_PROJECT_NAME}/${CI_ENVIRONMENT_SLUG}
-    BADGES: https://lysander.x.rnds.pro/api/v1/badges/groupped_settings
+    BADGES: https://lysander.x.rnds.pro/api/v1/badges/gs
   script:
     - bundle audit update
     - bundle audit || true

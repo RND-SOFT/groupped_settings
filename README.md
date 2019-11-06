@@ -1,5 +1,14 @@
 # Yet anoter Settings Plugin for Rails
 
+[![Gem Version](https://badge.fury.io/rb/groupped_settings.svg)](https://rubygems.org/gems/groupped_settings)
+[![Gem](https://img.shields.io/gem/dt/groupped_settings.svg)](https://rubygems.org/gems/groupped_settings/versions)
+[![YARD](https://badgen.net/badge/YARD/doc/blue)](http://www.rubydoc.info/gems/groupped_settings)
+
+
+[![Coverage](https://lysander.x.rnds.pro/api/v1/badges/gs_quality.svg)](https://lysander.x.rnds.pro/api/v1/badges/gs_quality.html)
+[![Quality](https://lysander.x.rnds.pro/api/v1/badges/gs_quality.svg)](https://lysander.x.rnds.pro/api/v1/badges/gs_quality.html)
+[![Outdated](https://lysander.x.rnds.pro/api/v1/badges/gs_outdated.svg)](https://lysander.x.rnds.pro/api/v1/badges/gs_outdated.html)
+[![Vulnerabilities](https://lysander.x.rnds.pro/api/v1/badges/gs_vulnerable.svg)](https://lysander.x.rnds.pro/api/v1/badges/gs_vulnerable.html)
 
 
 Groupped::Settings is a plugin that manage groupped settings for Rails :) Settings stored in own database table as json(b) field. Splitted by groups and can have polymorphyc referece to other models.
