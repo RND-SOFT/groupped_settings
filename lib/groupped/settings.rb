@@ -14,7 +14,7 @@ module Groupped
 
     end
 
-    self.config ||= Groupped::Settings::Configuration.new
+    self.config ||= ::Groupped::Settings::Configuration.new
 
     class << self
 
@@ -23,7 +23,7 @@ module Groupped
       end
 
       def configure
-        self.config ||= Groupped::Settings::Configuration.new
+        self.config ||= ::Groupped::Settings::Configuration.new
         yield(config)
         require 'groupped/settings/record'
       end

@@ -23,7 +23,7 @@ def setup_db
   end
   puts
 
-  require File.expand_path("#{$root}/../lib/generators/groupped_settings/migration/templates/migration.rb", __FILE__)
+  require File.expand_path("#{$root}/../lib/generators/templates/migration.rb", __FILE__)
   GrouppedSettingsMigration.migrate(:up)
 
   ActiveRecord::Schema.define(:version => 1) do

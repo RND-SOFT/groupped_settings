@@ -11,18 +11,12 @@ Gem::Specification.new 'groupped_settings' do |spec|
   spec.homepage      = 'https://github.com/RnD-Soft/GrouppedSettings'
   spec.license       = 'MIT'
 
-  spec.files         = %w[
-    lib/groupped.rb
-    lib/groupped/settings.rb
-    lib/groupped/settings/version.rb
-    lib/groupped/settings/configuration.rb
-    lib/groupped/settings/group.rb
-    lib/groupped/settings/settingsable.rb
-    lib/groupped/settings/record.rb
-    README.md LICENSE
-  ].reject do |f|
+  spec.files         = Dir['{lib}/**/*', 'README.md', 'LICENSE"'].reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
+
+  #s.files         = Dir['{app,config,lib}/**/*', 'CHANGELOG.md', 'MIT-LICENSE', 'README.md']
+  spec.require_paths = ['lib']
 
   spec.add_development_dependency 'activerecord', '~>5.0'
   spec.add_development_dependency 'bundler', '~> 2.0', '>= 2.0.1'

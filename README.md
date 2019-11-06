@@ -6,7 +6,8 @@ Groupped::Settings is a plugin that manage groupped settings for Rails :) Settin
 
 ## Setup
 
-`rake groupped_settings:install`
+`rails g rake groupped_settings:install`
+`rails g rake groupped:settings:migration`
 
 Now update your database with:
 

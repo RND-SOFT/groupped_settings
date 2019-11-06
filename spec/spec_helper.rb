@@ -34,7 +34,7 @@ SimpleCov.start
 $root = File.join(File.dirname(__dir__), 'spec')
 Dir[File.join(__dir__, 'support', '**', '*.rb')].sort.each {|f| puts f; require f }
 
-require 'groupped'
+require 'groupped_settings'
 
 RSpec.configure do |config|
   # config.verbose_retry = true

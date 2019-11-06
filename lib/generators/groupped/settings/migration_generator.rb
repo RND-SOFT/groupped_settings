@@ -7,7 +7,7 @@ module Groupped
     include Rails::Generators::Migration
 
     desc "Generates migration for rails-settings"
-    source_root File.expand_path('../templates', __FILE__)
+    source_root File.expand_path('../../../templates', __FILE__)
 
     def create_migration_file
       migration_template 'migration.rb', 'db/migrate/groupped_settings_migration.rb'
