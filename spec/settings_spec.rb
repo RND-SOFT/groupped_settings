@@ -113,7 +113,7 @@ RSpec.describe Groupped::Settings, type: :model do
   describe 'with target' do
     let!(:user){ User.create! }
     before do
-      User.send(:include, Groupped::Settings::Settingsable)
+      User.include Groupped::Settings::Settingsable
     end
 
     it do

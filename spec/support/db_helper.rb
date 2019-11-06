@@ -26,7 +26,7 @@ def setup_db
   require File.expand_path("#{$root}/../lib/generators/templates/migration.rb", __FILE__)
   GrouppedSettingsMigration.migrate(:up)
 
-  ActiveRecord::Schema.define(:version => 1) do
+  ActiveRecord::Schema.define(version: 1) do
     create_table :users do |t|
       t.string :type
       t.string :name

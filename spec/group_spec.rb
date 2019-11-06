@@ -65,11 +65,11 @@ RSpec.describe Groupped::Settings::Group, type: :model do
         it ('exception is expected to eq false'){ is_expected.to receive(:save!).and_raise('error'); expect(save).to eq(false) }
       end
 
-      it "#to_h" do
+      it '#to_h' do
         expect(group.to_h).to match('key1' => 1, 'key2' => 'def', 'key3' => nil)
       end
 
-      it "#to_hash" do
+      it '#to_hash' do
         expect(group.to_h).to match('key1' => 1, 'key2' => 'def', 'key3' => nil)
       end
 

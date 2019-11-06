@@ -4,20 +4,26 @@ require 'rails/generators/base'
 
 module Groupped
   module Settings
-  module Generators
-    MissingORMError = Class.new(Thor::Error)
+    module Generators
 
-    class InstallGenerator < Rails::Generators::Base
-      puts File.expand_path("../../../templates", __FILE__)
-      source_root File.expand_path("../../../templates", __FILE__)
 
-      desc "Creates a Groupped::Settings initializer and copy locale files to your application."
+      MissingORMError = Class.new(Thor::Error)
 
-      def copy_initializer
-        template "groupped_settings.rb", "config/initializers/groupped_settings.rb"
+      class InstallGenerator < Rails::Generators::Base
+
+        puts File.expand_path('../../templates', __dir__)
+        source_root File.expand_path('../../templates', __dir__)
+
+        desc 'Creates a Groupped::Settings initializer and copy locale files to your application.'
+
+        def copy_initializer
+          template 'groupped_settings.rb', 'config/initializers/groupped_settings.rb'
+        end
+
       end
+
 
     end
   end
-  end
 end
+

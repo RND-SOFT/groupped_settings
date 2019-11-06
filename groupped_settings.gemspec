@@ -15,7 +15,7 @@ Gem::Specification.new 'groupped_settings' do |spec|
     f.match(%r{^(test|spec|features)/})
   end
 
-  #s.files         = Dir['{app,config,lib}/**/*', 'CHANGELOG.md', 'MIT-LICENSE', 'README.md']
+  # s.files         = Dir['{app,config,lib}/**/*', 'CHANGELOG.md', 'MIT-LICENSE', 'README.md']
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'activerecord', '~>5.0'
