@@ -24,8 +24,8 @@ module Groupped
         Record.sanitize(settings).slice(*self.attribute_names)
       end
 
-      def self.load(target: nil)
-        Groupped::Settings[self.group_name, self, target: target]
+      def self.load(target: nil, settings: {})
+        Groupped::Settings[self.group_name, self, target: target, settings: settings]
       end
 
       def initialize(record)
