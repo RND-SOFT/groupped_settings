@@ -19,7 +19,7 @@ module Groupped
     class << self
 
       def [](group, klass = Group, target: nil)
-        klass.new(Record.first_or_create!(group: group.downcase, target: target))
+        klass.new(Record.where(group: group.downcase, target: target).first_or_create!)
       end
 
       def configure
