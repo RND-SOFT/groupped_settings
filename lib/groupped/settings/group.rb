@@ -28,7 +28,7 @@ module Groupped
         Groupped::Settings[self.group_name, self, target: target, settings: settings]
       end
 
-      attr_reader settings_record
+      attr_reader :settings_record
 
       def initialize(record)
         @settings_record = record
