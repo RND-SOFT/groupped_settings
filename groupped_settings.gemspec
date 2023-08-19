@@ -25,7 +25,7 @@ Gem::Specification.new 'groupped_settings' do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 2.0', '>= 2.0.1'
-  spec.add_development_dependency 'activerecord', '~>5.0'
+  spec.add_development_dependency 'activerecord', '~>7.0'
   spec.add_development_dependency 'database_cleaner'
   spec.add_development_dependency 'rake'
 
