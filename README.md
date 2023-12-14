@@ -1,4 +1,4 @@
-# Yet anoter Settings Plugin for Rails
+# Yet another Settings Plugin for Rails
 
 [![Gem Version](https://badge.fury.io/rb/groupped_settings.svg)](https://rubygems.org/gems/groupped_settings)
 [![Gem](https://img.shields.io/gem/dt/groupped_settings.svg)](https://rubygems.org/gems/groupped_settings/versions)
