@@ -20,7 +20,7 @@ ADD lib/groupped/settings/version.rb /home/app/lib/groupped/settings/
 RUN set -ex \
   && curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter \
   && chmod +x cc-test-reporter \
-  && gem install bundler && gem update bundler \
+  && gem install bundler -v 2.3.27 \
   && bundle install --jobs=3 \
   && gem cleanup  \
   && rm -rf /tmp/* /var/tmp/* /usr/src/ruby /root/.gem /usr/local/bundle/cache
